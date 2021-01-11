@@ -1,0 +1,88 @@
+@import "normalize.scss";
+@import "range.scss";
+
+$font-size-body: 15px;
+$font-size-header: 21px;
+$font-size-small: 12px;
+$nav-width: 167px;
+
+@font-face {
+  font-family: Tempus;
+  src: url("../tempus_regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+html {
+  font-size: $font-size-body;
+  font-family: "Tempus", san-serif;
+  font-weight: normal;
+  line-height: 19px;
+  color: #000000;
+}
+
+body {
+  padding-left: $nav-width;
+}
+
+.text-header {
+  font-size: $font-size-header;
+  line-height: 25px;
+  margin: 0;
+}
+
+.text-small {
+  font-size: $font-size-small;
+  font-family: "Helvetica", san-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 14px;
+  margin: 0;
+  color: #808080;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  padding-top: 88px;
+  padding-left: 25px;
+
+  a {
+    display: block;
+  }
+}
+
+.main-content {
+  max-width: 1024px;
+}
+
+.read-section {
+  border-top: 1px solid black;
+
+  h3 {
+    width: 160px;
+  }
+
+  p {
+    margin: 0;
+  }
+}

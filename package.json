@@ -1,0 +1,16 @@
+{
+  "name": "tempus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel --no-source-maps -d ./.tmp src/index.html",
+    "build": "parcel build --no-source-maps -d ./docs --public-url /tempus src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.2"
+  }
+}
