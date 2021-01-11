@@ -76,6 +76,22 @@ nav {
   max-width: 1024px;
 }
 
+.page {
+  display: none;
+}
+
+html[page=intro] #page-intro,
+html[page=read] #page-read,
+html[page=test] #page-test {
+  display: block;
+}
+
+#page-intro {
+  img {
+    width: 100%;
+  }
+}
+
 .section-read {
   $spacing-right: 160px;
   $spacing-vertical: 8px;
@@ -111,9 +127,7 @@ nav {
     line-height: 22px;
   }
 
-  &:last-child  {
+  &:last-child {
     border-bottom: 1px solid black;
   }
-
-
 }
