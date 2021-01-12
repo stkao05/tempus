@@ -9,7 +9,7 @@ $spacing: 8px;
 
 @font-face {
   font-family: Tempus;
-  src: url("../tempus_regular.otf");
+  src: url("../font/tempus_regular.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -72,7 +72,7 @@ button {
   font-size: $font-size-small;
   color: black;
   line-height: normal;
-  background-color: #DDDDDD;
+  background-color: #dddddd;
 
   $height: 2em;
   height: $height;
@@ -175,7 +175,6 @@ html[page="test"] #page-test {
     font-size: 14px;
     line-height: 19px;
   }
-
 
   &:last-child {
     border-bottom: 1px solid black;
