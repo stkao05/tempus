@@ -90,7 +90,7 @@ nav {
   left: 0;
   top: 0;
 
-  padding-top: 88px;
+  padding-top: 99px;
   padding-left: 25px;
 
   a {
@@ -125,6 +125,14 @@ html[page="test"] #page-test {
 #page-intro {
   img {
     width: 100%;
+  }
+}
+
+.image-rotate {
+  cursor: pointer;
+
+  img {
+    display: none;
   }
 }
 
