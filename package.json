@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel --no-source-maps -d ./.tmp src/index.html",
-    "build": "parcel build --no-source-maps -d ./docs --public-url /tempus src/index.html"
+    "build": "parcel build --no-source-maps -d ./dist --public-url /tempus src/index.html"
   },
   "author": "",
   "license": "ISC",
