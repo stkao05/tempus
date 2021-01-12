@@ -171,6 +171,12 @@ html[page="test"] #page-test {
     line-height: 22px;
   }
 
+  &.read-4 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+
   &:last-child {
     border-bottom: 1px solid black;
   }
