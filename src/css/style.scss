@@ -60,6 +60,31 @@ a {
   }
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+
+  font-family: "Helvetica", san-serif;
+  font-size: $font-size-small;
+  color: black;
+  line-height: normal;
+  background-color: #DDDDDD;
+
+  $height: 2em;
+  height: $height;
+  border-radius: $height / 2;
+  padding: 0 3em;
+  cursor: pointer;
+
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
 nav {
   position: absolute;
   left: 0;
