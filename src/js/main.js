@@ -1,3 +1,5 @@
+import testTextList from "./test_text_list.json";
+
 (function () {
   function initTestPage() {
     function initRangeControl(rangeControl, value, onChange) {
@@ -37,6 +39,13 @@
     });
 
     updateTestTextStyle();
+
+    // test text switch
+    let index = 0;
+    document.getElementById("text-update-button").addEventListener("click", () => {
+        testText.textContent = testTextList[index]
+        index = (index + 1) % testTextList.length
+    })
   }
 
   function initPageControl() {
