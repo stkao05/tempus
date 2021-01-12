@@ -5,6 +5,7 @@ $font-size-body: 15px;
 $font-size-header: 21px;
 $font-size-small: 12px;
 $nav-width: 167px;
+$spacing: 8px;
 
 @font-face {
   font-family: Tempus;
@@ -80,9 +81,9 @@ nav {
   display: none;
 }
 
-html[page=intro] #page-intro,
-html[page=read] #page-read,
-html[page=test] #page-test {
+html[page="intro"] #page-intro,
+html[page="read"] #page-read,
+html[page="test"] #page-test {
   display: block;
 }
 
@@ -129,5 +130,25 @@ html[page=test] #page-test {
 
   &:last-child {
     border-bottom: 1px solid black;
+  }
+}
+
+#page-test {
+  .controller {
+    display: flex;
+  }
+
+  .range-control {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+
+    input {
+      margin: 0 1em;
+    }
+
+    .range-value {
+      color: black;
+    }
   }
 }
