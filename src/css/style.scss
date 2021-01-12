@@ -73,6 +73,16 @@ nav {
   }
 }
 
+header {
+  .text-header {
+    margin: $spacing 0;
+  }
+
+  p {
+    margin: 2 * $spacing 0;
+  }
+}
+
 .main-content {
   max-width: 1024px;
 }
@@ -134,6 +144,9 @@ html[page="test"] #page-test {
 }
 
 #page-test {
+  border-top: 1px solid black;
+  padding-top: $spacing;
+
   .controller {
     display: flex;
   }
