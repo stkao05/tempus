@@ -61,6 +61,8 @@ a {
 }
 
 button {
+  $btn-color: #dddddd;
+
   border: none;
   margin: 0;
   padding: 0;
@@ -72,7 +74,7 @@ button {
   font-size: $font-size-small;
   color: black;
   line-height: normal;
-  background-color: #dddddd;
+  background-color: $btn-color;
 
   $height: 2em;
   height: $height;
@@ -83,6 +85,13 @@ button {
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: lighten($btn-color, 5%);
+    outline: none;
+  }
 }
 
 nav {
@@ -200,6 +209,12 @@ html[page="test"] #page-test {
 
     .range-value {
       color: black;
+    }
+  }
+
+  #page-test-text {
+    &:focus {
+      outline: none;
     }
   }
 }
