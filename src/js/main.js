@@ -4,12 +4,20 @@ import initTestPage from "./test_page";
   function initImageRotate() {
     const images = document.querySelectorAll(".image-rotate img");
 
-    let index = 0;
+    let index = localStorage.getItem("image-rotate-index");
+    if (index === null) {
+      index = 0;
+    } else {
+      index = parseInt(index);
+      index = (index + 1) % images.length;
+    }
+
     function showImg() {
       images.forEach((elm) => {
         elm.style.display = null;
       });
       images[index].style.display = "block";
+      localStorage.setItem("image-rotate-index", index);
     }
 
     const container = document.querySelector(".image-rotate");
