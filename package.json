@@ -1,11 +1,11 @@
 {
-  "name": "tempus",
+  "name": "tempus-specimen",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "parcel --no-source-maps -d ./.tmp src/index.html",
-    "build": "parcel build --no-source-maps -d ./docs --public-url /tempus src/index.html"
+    "build": "parcel build --no-source-maps -d ./docs --public-url /tempus-specimen src/index.html"
   },
   "author": "",
   "license": "ISC",
